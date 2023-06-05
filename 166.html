@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let option;
+// вывод всех свойств объекта navigator
+for (option in navigator){
+	document.write(option + ' : ' + navigator[option]+ ' <br />');
+}
+// функция выовда конкретных свойств объекта navigator
+function userDetails (){
+	document.write("<br><br>Название браузера: " + navigator.userAgent + "<br />");
+	document.write("Язык браузера: " + navigator.language + "<br />");
+	document.write("Название ОС: " + navigator.oscpu + "<br />");
+	document.write("Включены ли куки: " + navigator.cookieEnabled + "<br />");
+	document.write("Подключен ли Интернет: " + navigator.nLine + "<br />");
+}
+userDetails();
+    </script>
+</body>
+</html>

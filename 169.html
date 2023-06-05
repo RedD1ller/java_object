@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Замкнутые функции</title>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+  <script>
+(function (window){ // замкнутая функция
+		let IvanGreeter = {}; // создание пустого объекта
+		IvanGreeter.name = "Иван"; // свойство
+		let greeting = "Привет, ";
+		IvanGreeter.sayHello = function () { // метод
+		  console.log(greeting + " " + IvanGreeter.name);
+	}
+	window.IvanGreeter = IvanGreeter;
+})(window);
+  </script>
+</head>
+<body>
+  <h1>Замкнутые функции</h1>
+</body>
+</html>

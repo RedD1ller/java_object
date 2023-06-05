@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myBook(title,price){
+//  определение свойств
+this.title = title;
+this.price = price;
+// определение метода
+this.show = show;
+	function show()
+	{
+			document.write("Название: " + this.title);
+			document.write(". Цена: " + this.price);
+	}
+}
+let book = new myBook("Книга", 200);
+book.show();
+    </script>
+</body>
+</html>

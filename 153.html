@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(biology, phisics) {
+  this.biology=biology;
+  this.phisics=phisics; 
+}
+let ivanov = new Student();
+ivanov.biology = "отлично";
+Student.prototype.biology = "отлично";
+Student.prototype.email="jb@gmail.com";
+alert(ivanov.email); // выдаст "jb@gmail.com"
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Car(name, model, color) { /* конструктор объекта car*/
+  this.name = name; 
+  this.model = model; 
+  this.color = color; 
+}
+ 
+let myCar=new Car;
+myCar.name="Мерс";
+myCar.model="600";
+myCar.color="green";
+ 
+Car.prototype.owner = "Иванов"; /* добавляем новое свойство*/
+alert(myCar.name+" "+myCar.model+" "+myCar.color+" "+myCar.owner);
+    </script>
+</body>
+</html>

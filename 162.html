@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myBook=new Object();
+myBook.title="книга";
+myBook.price="200";
+ 
+alert(myBook["title"]); // 1-й вариант обращения к свойствам
+alert(meBook.price); // 2-й вариант обращения к свойствам
+ 
+function myBookShow()
+{
+	for (let i in myBook)
+	{
+		document.write(i+": "+myBook[i]+"<br>"); // Перебор свойств
+	}
+}
+myBook.show=myBookShow;
+myBook.show();
+    </script>
+</body>
+</html>
