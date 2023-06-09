@@ -7,8 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
         
+        String.prototype.color = "black";
+        String.prototype.write = stringWrite;
+        function stringWrite(){
+            document.write('<li><a href="C:\ис21\Ковальков е а. Хомяков\157.html">');
+            document.write(this.toString());
+            document.write('</a></li>');
+        }
+        let s = new String("Это строка");
+        s.color = "red"
+        s.write();
+        s.write();
+        s.write();
+        s.write();
+        s.write();
     </script>
 </body>
 </html>

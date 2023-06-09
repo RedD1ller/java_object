@@ -9,6 +9,16 @@
 <body>
     <script>
         
+        String.prototype.color = "black";
+        String.prototype.write = stringWrite;
+        function stringWrite(){
+            document.write('<h2 style = "color: '+this.color+';">');
+            document.write(this.toString());
+            document.write('</h2>');
+        }
+        let s = new String("Это строка");
+        s.color = "red"
+        s.write();
     </script>
 </body>
 </html>
