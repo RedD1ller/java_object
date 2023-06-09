@@ -8,15 +8,14 @@
 </head>
 <body>
     <script>
-        let Tour = {
-        peoples : 10,
-        days : 5,
-        Country : 1500
-        };
-        let option;
-        for (option in Tour){
-            document.write(option + ':' + Tour[option] + '<br/>')
-        }
+        let Browser = new Object();
+        Browser.name = "number";
+        Browser["version"]= "9.0";
+        for (let a in Browser)
+        {
+            alert(a);
+        alert(Browser[a]);
+    }
     </script>
 </body>
 </html>
